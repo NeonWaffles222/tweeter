@@ -25,6 +25,7 @@
 }
 
 .counter {
+  color: #545149;
   font-family: 'Bungee', cursive;
   padding-right: 6px;
   font-size: 1rem;
@@ -38,5 +39,5 @@
   border-bottom: 4px solid #545149;
   font-weight: 600;
   height: 4rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
