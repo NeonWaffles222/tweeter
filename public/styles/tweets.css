@@ -1,18 +1,15 @@
-.tweets-container {
+.tweet {
   border: 4px solid #545149;
   margin-top: 2em;
 }
 
-.tweets-container:hover {
+.tweet:hover {
   box-shadow: 6px 6px 6px #4056A1;
 }
 
-.tweet {
+.tweet-head {
   display: flex;
   justify-content: space-between;
-}
-
-.tweet-head {
   align-items: center;
   padding: 1em;
 }
@@ -24,8 +21,8 @@
 }
 
 .tweet-img {
-  height: 3em;
-  width: 3em;
+  height: 2em;
+  width: 2em;
 }
 
 .user-name {
@@ -46,6 +43,8 @@
 }
 
 .tweet-foot {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0.25em 1em 1em;
 }
