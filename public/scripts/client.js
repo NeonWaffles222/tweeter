@@ -15,6 +15,7 @@ $(document).ready(function() {
     }
   };
 
+  // function to prevent tweets from affecting the code
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -65,8 +66,7 @@ $(document).ready(function() {
     const $data = $(this).serialize();
     const text = $(this).find('textarea').val();
 
-    // console.log(text.length);
-
+    // check if the tweet is valid before posting
     if (!text) {
       $(".tweet-error").html("Tweet is empty.");
     } else if (text.length > 140) {
@@ -86,4 +86,4 @@ $(document).ready(function() {
   });
 });
 
-;
+
