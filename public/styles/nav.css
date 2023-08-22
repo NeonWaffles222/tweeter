@@ -1,5 +1,6 @@
 nav {
-  background-color: #4056A1;
+  background-color: #e07b00;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   color: #FFFFFF;
   height: 120px;
   width: 100%;
@@ -22,4 +23,11 @@ nav {
 
 .angle-down {
   color: red;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+    background-image: none;
+  }
 }

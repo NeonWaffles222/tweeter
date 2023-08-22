@@ -32,3 +32,12 @@ main {
   background-color: #f4f1ec;
   margin-inline: 5%;
 }
+
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 50%;
+    float: right;
+    padding-top: 240px;
+  }
+
+}
