@@ -37,6 +37,7 @@
 }
 
 #tweet-text {
+  text-overflow: hidden;
   background: transparent;
   border: none;
   outline: none;

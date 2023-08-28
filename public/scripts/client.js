@@ -9,6 +9,9 @@ $(document).ready(function() {
   // gets the amrkup for each tweet in the array and appends it to the html file
   const renderTweets = function(tweets) {
     $('#tweets-container').empty();
+    tweets.sort(function(a, b) {
+      return b.created_at - a.created_at;
+    });
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').append($tweet);
@@ -72,6 +75,8 @@ $(document).ready(function() {
     } else if (text.length > 140) {
       $(".tweet-error").html("Tweet excedes character limit.");
     } else {
+      $(".tweet-error").html("");
+      $(".counter").val(140);
       $.ajax({
         type: 'POST',
         url: '/tweets',
